@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 #include <unistd.h>
 
 void	ft_putchar(char c)
@@ -19,7 +20,7 @@ void	ft_putchar(char c)
 
 void	ft_putnbr(int nb)
 {
-	if (nb == -2147483648)
+	if (nb == (int)0x80000000)
 	{
 		ft_putnbr(nb / 10);
 		ft_putchar('8');
