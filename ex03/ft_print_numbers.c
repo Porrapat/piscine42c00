@@ -23,8 +23,5 @@ void	ft_print_numbers(void)
 
 	letter = '0';
 	while (letter <= '9')
-	{
-		ft_putchar(letter);
-		letter++;
-	}
+		ft_putchar(letter++);
 }
